@@ -1,9 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Hello, World!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #profile, #projects, #contact {
+            padding: 2rem 0;
+        }
+        #projects .project {
+            margin-bottom: 1rem;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <header>
+        <div class="container">
+            <h1>Portofolio Saya</h1>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profil</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="profile" class="container">
+        <h2>Profil</h2>
+        <p>Halo! Saya [Nama Anda], seorang [Profesi Anda] yang berbasis di [Lokasi Anda]. Saya berspesialisasi dalam [Spesialisasi Anda] dan memiliki minat dalam [Minat Anda]. Di bawah ini Anda dapat menemukan beberapa proyek terbaru saya.</p>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Proyek</h2>
+        <div class="project">
+            <h3>Proyek 1</h3>
+            <p>Deskripsi proyek 1.</p>
+        </div>
+        <div class="project">
+            <h3>Proyek 2</h3>
+            <p>Deskripsi proyek 2.</p>
+        </div>
+        <div class="project">
+            <h3>Proyek 3</h3>
+            <p>Deskripsi proyek 3.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Kontak</h2>
+        <p>Anda dapat menghubungi saya via email di <a href="mailto:your.email@example.com">your.email@example.com</a> atau melalui saluran media sosial saya:</p>
+        <ul>
+            <li><a href="https://twitter.com/yourprofile" target="_blank">Twitter</a></li>
+            <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/yourprofile" target="_blank">GitHub</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nama Anda</p>
+    </footer>
 </body>
 </html>
