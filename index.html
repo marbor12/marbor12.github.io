@@ -35,6 +35,54 @@
             margin: auto;
             overflow: hidden;
         }
+        section {
+            margin-bottom: 20px; /* Jarak antara setiap bagian */
+            border-bottom: 1px solid #ddd; /* Garis pemisah antar bagian */
+        }
+    }
+        section:last-child {
+            border-bottom: none; /* Hapus garis pemisah di bagian terakhir */
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 8px; /* Sudut bulat pada gambar */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan pada gambar */
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        ul li a {
+            color: #007bff; /* Warna link */
+            text-decoration: none;
+            transition: color 0.3s; /* Efek transisi warna saat hover */
+        }
+        ul li a:hover {
+            color: #0056b3; /* Warna link saat hover */
+        }
         #profile, #enddevice, #contact, #tutorial {
             padding: 2rem 0;
         }
@@ -46,6 +94,13 @@
             color: #fff;
             text-align: center;
             padding: 1rem 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        #profile img{
+            display: blocks;
+            margin:
         }
     </style>
 </head>
@@ -67,35 +122,46 @@
     <section id="profile" class="container">
         <h2>Profil</h2>
         <img src="https://raw.githubusercontent.com/marbor12/marbor12.github.io/main/foto%20profil1.jpg" alt="Foto Profil" width="400">
-        <p> NIM    : 607012330026 </p>
-        <p> Nama   : Maria Oxtavia Laurence Siboro </p>
-        <p> Kelas  : D3SI-4702 </p>
-        <p> Matkul : Arsitektur & Jaringan Komputer </p>
+        <div style="margin-top: 20px;">
+            <p><strong>NIM</strong>: 607012330026</p>
+            <p><strong>Nama</strong>: Maria Oxtavia Laurence Siboro</p>
+            <p><strong>Kelas</strong>: D3SI-4702</p>
+            <p><strong>Matkul</strong>: Arsitektur & Jaringan Komputer</p>
+        </div>
     </section>
 
     <section id="end-device" class="container">
         <h2>End Device</h2>
-        <p>End device adalah perangkat yang digunakan oleh pengguna akhir untuk berinteraksi dengan jaringan. Contoh end device termasuk komputer, smartphone, dan printer.</p>
+        <p>End device adalah perangkat yang digunakan oleh pengguna akhir untuk berinteraksi dengan jaringan. Perangkat jaringan yang paling familiar bagi kita sehari-hari yaitu end devices atau hosts. Perangkat ini memberi bentuk bagi antarmuka/interface antara pengguna dan jaringan komunikasi dasar. Beberapa contoh end device yaitu: komputer (work station, laptop, file server, web server), printer jaringan, telepon genggam bergerak, kamera pengawas, dll.
+            Sebuah perangkat host, baik yang menjadi sumber atau tujuan dari sebuah pesan, dikirimkan melalui suatu jaringan. Supaya dapat membedakan antara satu host dengan host lainnya, setiap host diidentifikasikan dengan/diberikan sebuah alamat/address. Pada saat sebuah host memulai komunikasi, host tersebut menggunakan alamat dari host tujuan untuk menentukan ke mana tujuan pesan tersebut.
+        </p>
         <div class="device">
             <h3>Komputer</h3>
             <img src="https://raw.githubusercontent.com/marbor12/marbor12.github.io/main/Komputer.jpg" alt="Gambar Komputer" width="200">
-            <p>Komputer adalah end device yang paling umum digunakan. Komputer dapat digunakan untuk berbagai keperluan seperti mengakses internet, bekerja, dan bermain game.</p>
+            <p>Komputer adalah end device yang paling umum digunakan. Komputer dapat digunakan untuk berbagai keperluan seperti mengakses internet, bekerja, dan bermain game.
+                komputer berfungsi sebagai titik akses bagi pengguna untuk memasukkan data (input), memproses data tersebut (processing), dan menerima hasilnya (output). </p>
         </div>
         <div class="device">
             <h3>Smartphone</h3>
             <img src="https://raw.githubusercontent.com/marbor12/marbor12.github.io/main/smartphone.jpg" alt="Gambar Smartphone" width="200">
-            <p>Smartphone adalah perangkat yang dapat digunakan untuk komunikasi, mengakses internet, dan menjalankan berbagai aplikasi.</p>
+            <p>Smartphone adalah perangkat yang dapat digunakan untuk komunikasi, mengakses internet, dan menjalankan berbagai aplikasi.
+                Smartphone menawarkan mobilitas yang lebih tinggi dan kemudahan penggunaan karena ukurannya yang kecil dan fitur yang lengkap.
+                Smartphone memungkinkan pengguna untuk melakukan panggilan suara, mengirim pesan teks, dan melakukan video call. Dengan smartphone juga pengguna dapat menjelajahi internet dan mengakses layanan
+                online. Dilengkapi dengan kamera, pemutar musik maupun video, serta aplikasi mengedit, dan berbagi konten multimedia.</p>
         </div>
         <div class="device">
             <h3>Printer</h3>
             <img src="https://raw.githubusercontent.com/marbor12/marbor12.github.io/main/printer.jpg" alt="Gambar Printer" width="200">
-            <p>Printer adalah perangkat yang digunakan untuk mencetak dokumen dan gambar dari komputer atau smartphone.</p>
+            <p>Printer adalah perangkat yang digunakan untuk mencetak dokumen dan gambar dari komputer atau smartphone.
+                Data ini bisa berupa teks, gambar, grafik, atau kombinasi dari semuanya1. Printer dapat terhubung dengan komputer atau jaringan melalui berbagai jenis koneksi, seperti kabel USB, jaringan lokal (LAN), atau bahkan secara nirkabel (Wi-Fi atau Bluetooth)
+                Printer jaringan juga dapat menjadi bagian dari infrastruktur jaringan yang lebih besar, yang mencakup perangkat lain seperti komputer (workstation, laptop, file server, web server), telepon VoIP, kamera pengawas, dan perangkat genggam bergerak (smartphone, tablet, PDA). 
+                Ini menunjukkan betapa pentingnya printer dalam lingkungan kerja modern yang terhubung dan serba digital.</p>
         </div>
     </section>
 
     <section id="tutorial" class="container">
         <h2>Tutorial Web Hosting</h2>
-        <p>Silakan unduh tutorial web hosting <a href="https://github.com/marbor12/marbor12.github.io/raw/main/607012330026_Maria%20Oxtavia%20Laurence%20Siboro.pdf">di sini</a>.</p>
+        <p>Silakan unduh tutorial web hosting dan membuat isi website <a href="https://github.com/marbor12/marbor12.github.io/raw/master/607012330026_Maria%20Oxtavia%20Laurence%20Siboro.pdf">di sini</a>.</p>
     </section>
 
     <section id="contact" class="container">
